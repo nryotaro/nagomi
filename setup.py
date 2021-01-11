@@ -17,11 +17,12 @@ setup(name='nagomi',
       install_requires=[
           'click',
           'oauthlib',
+          'Flask',
       ],
       entry_points={'console_scripts': ['nagomi=nagomi:main']},
       extras_require={
           'test': [
-              'pytest'
+              'pytest',
           ],
           'dev': [
               'ipython',
